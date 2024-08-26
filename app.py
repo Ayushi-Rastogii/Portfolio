@@ -5,7 +5,8 @@ import logging
 import os
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/send-email": {"origins": "https://portfolio-l16b6q6b6-ayushi-rastogiis-projects.vercel.app"}})
+
 
 # Configure Flask-Mail
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # e.g., smtp.gmail.com
