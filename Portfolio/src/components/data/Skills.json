@@ -1,0 +1,102 @@
+[
+  {
+    "id":1,
+    "name": "HTML5",
+    "source":"/skills/html.png"
+  },
+    {
+    "id":2,
+    "name":"CSS",
+    "source":"/skills/css.png"
+  },
+    {
+    "id":3,
+    "name":"Javascript",
+    "source":"/skills/javascript.png"
+  },
+    {
+    "id":4,
+    "name":"ReactJS",
+    "source":"/skills/react.png"
+  },
+    {
+    "id":5,
+    "name":"NodeJS",
+    "source":"/skills/node.png"
+  },  {
+    "id":6,
+    "name":"ExpressJS",
+    "source":"/skills/express.png"
+  },
+    {
+    "id":7,
+    "name":"MongoDB",
+    "source":"/skills/mongodb.png"
+  },
+      {
+    "id":8,
+    "name":"Bootstrap",
+    "source":"/skills/bootstrap.png"
+  },
+      {
+    "id":9,
+    "name":"Sass",
+    "source":"/skills/sass.png"
+  },
+    {
+    "id":10,
+    "name":"C++",
+    "source":"/skills/cplus.png"
+  },
+    {
+    "id":11,
+    "name":"Python",
+    "source":"/skills/python.png"
+  },
+      {
+    "id":12,
+    "name":"Flask",
+    "source":"/skills/flask.png"
+  }
+  ,
+    {
+    "id":13,
+    "name":"Machine Learning",
+    "source":"/skills/ml.png"
+  },
+    {
+    "id":14,
+    "name":"Deep Learning",
+    "source":"/skills/dl.png"
+  },
+  {
+    "id":15,
+    "name":"Verilog",
+    "source":"/skills/verilog.png"
+  },
+    {
+    "id":16,
+    "name":"Large Language Models",
+    "source":"/skills/llm.png"
+  },
+  {
+    "id":17,
+    "name":"C",
+    "source":"/skills/c.png"
+  },
+  {
+    "id":18,
+    "name":"Redis",
+    "source":"/skills/redis.png"
+  },
+  {
+    "id":19,
+    "name":"Bash scripting",
+    "source":"/skills/bash.png"
+  },
+  {
+    "id":20,
+    "name":"Tailwind CSS",
+    "source":"/skills/tailwind.png"
+  }
+]

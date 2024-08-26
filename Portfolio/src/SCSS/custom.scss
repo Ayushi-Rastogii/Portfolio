@@ -1,0 +1,467 @@
+@import "./variables";
+@import "./mixins";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+$box-shadow: 10px 10px 100px 50px rgb(10, 136, 158);
+$primary:#289dc6;
+.custom-navbar-toggler {
+  border-color: white !important;
+  /* Change the border color of the toggle button */
+}
+
+.App{
+  font-family: "Libre Baskerville", serif;
+  h2{
+    font-size: 6rem;
+  }
+  h3{
+    font-size: 5rem;
+  }
+  h4{
+    font-size: 3rem;
+  }
+  // h1,h2,.navbar-brand(
+  //   font-family: "Libre Baskerville", serif;
+  // )
+}
+.tech-skills-section {
+  text-align: center;
+  padding: 5px 0;
+}
+
+.skills-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 5px 5px 1px 2px;
+  
+  background: linear-gradient(to right, rgb(41, 157, 199, 0.2), #299dc733);
+  border-radius: 25px;
+  flex-direction: row; // Ensures the heading and icons stack vertically
+
+  h4 {
+    color: #0056b3; // Dark blue color for the heading
+    margin-bottom: 5px; // Space between heading and line
+  }
+
+  &::before {
+    content: "";
+    width: 80%; // Adjust the width as needed
+    height: 2px;
+    background-color: #0056b3; // Same dark blue color
+    margin: 10px 0; // Space around the line
+  }
+
+  .skill-icon {
+    margin: 0px 3px;
+    color: #289dc6;
+    text-align: center;
+
+    p {
+      margin-top: 10px;
+      font-size: 10px;
+    }
+
+    &:hover {
+      color: #0056b3;
+      transform: scale(1.1);
+      transition: transform 0.3s;
+    }
+
+    .custom-icon {
+      width: 36px; // Adjust size as needed
+      height: 36px;
+    }
+  }
+}
+.custom-image {
+    width: 50%;
+      /* Adjust size */
+      max-width: 200px;
+      /* Maximum width */
+      position: relative;
+  border: 5px solid $primary;
+  border-radius: 100%;
+  animation-name: superman;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes superman {
+  0% {
+    border-color: rgb(10, 136, 158);
+    transform: translate(0, 0px);
+    box-shadow: 10px 10px 100px 50px rgb(10, 136, 158) !important;
+  }
+
+  25% {
+    border-color: rgb(91, 159, 166);
+    box-shadow: 10px 10px 100px 50px rgb(91, 159, 166) !important;
+  }
+
+  50% {
+    border-color: rgb(6, 199, 242);
+    transform: translate(0, 10px);
+    box-shadow: 10px 10px 100px 50px rgb(6, 199, 242) !important;
+  }
+
+  75% {
+    border-color: rgb(39, 72, 76);
+    box-shadow: 10px 10px 100px 50px rgb(39, 72, 76) !important;
+  }
+
+  100% {
+    border-color: rgb(95, 150, 218);
+    transform: translate(0, -0px);
+    box-shadow: 10px 10px 100px 50px rgb(95, 150, 218) !important;
+  }
+}
+// .custom-image {
+//   width: 50%;
+//   /* Adjust size */
+//   max-width: 200px;
+//   /* Maximum width */
+//   position: relative;
+//   /* Required for positioning the pseudo-element */
+
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     width: 140%;
+//     /* Larger than the image to ensure visibility */
+//     height: 140%;
+//     background: radial-gradient(circle, rgba(41, 157, 199, 0.3), transparent);
+//     border-radius: 50%;
+//     transform: translate(-50%, -50%);
+//     z-index: -1;
+//     /* Ensure the effect is behind the image */
+//     animation: fluidGlow 2s infinite;
+//   }
+// }
+
+@keyframes fluidGlow {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+/* src/SCSS/custom.scss */
+
+// .liquid-container {
+//   position: relative;
+//   display: inline-block;
+//   overflow: hidden;
+  
+//   /* Ensures the liquid effect stays within the rounded circle */
+// }
+
+// .liquid-image {
+//   display: block;
+//   width: 50%;
+//     /* Adjust size */
+//   max-width: 200px;
+//   /* Adjust size as needed */
+//   object-fit: cover;
+//   padding:3px;
+//   border: 5px solid #289dc6;
+//   /* Ensures the image covers the area */
+// }
+
+// .liquid-container::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+//   animation: liquid 2s infinite;
+//   border-radius: 50%;
+//   /* Ensures the effect is rounded */
+// }
+
+// @keyframes liquid {
+//   0% {
+//     transform: translate(-50%, -50%) scale(0.5);
+//   }
+
+//   50% {
+//     transform: translate(50%, 50%) scale(1.5);
+//   }
+
+//   100% {
+//     transform: translate(-50%, -50%) scale(0.5);
+//   }
+// }
+.about-me-image {
+  // Set a specific size for the image
+  width: 300px; // Adjust the width as needed
+  height: 350px; // Adjust the height to maintain aspect ratio
+
+  // Add a border for a clear boundary
+  border: 3px solid #3498db; // A blue color border
+
+  // Make the image round if it's a profile picture
+  border-radius: 2%;
+
+  // Add a box-shadow for a subtle 3D effect
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Light shadow
+  // Center the image if needed
+  display: block;
+  margin: 0 auto;
+
+  // Add some padding for spacing around the image
+  padding: 10px;
+
+  // Adjust the position and spacing
+  position: relative;
+  top: 10px;
+  transform: rotate(270deg);
+}
+// src/components/Publications.scss
+
+/* src/SCSS/custom.scss */
+.publication-link {
+  align-items: flex-start;
+  display: block;
+  margin: 10px;
+  /* Remove default margins */
+  padding: 10px;
+  /* Padding around the link text */
+  color:#289dc6;
+  /* Link color */
+  text-decoration: none;
+  /* Remove underline from links */
+  font-weight: bold;
+  /* Make text bold */
+}
+// .experience-card{
+
+// }
+.experience-containers{
+    display: flex;
+      justify-content: center;
+           
+}
+.project-container,.experience-container{
+
+        align-items: center;
+        padding: 20px;
+      //border: 1px solid #ddd;
+      list-style-type: none;
+      border-radius: 8px;
+      background-color: #f0f0f0;
+      margin: 20px 0px 20px 0px;
+      justify-content: center;
+}
+.pub-outer{
+  align-items: center;
+    padding: 20px;
+    //border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    list-style-type: none;
+    margin: 20px 0px 20px 0px;
+      border: 4px solid #289dc6;
+        box-shadow: 0 10px 15px cadetblue;
+
+}
+.publications-container {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+/* src/SCSS/custom.scss */
+
+.bold-text {
+  font-weight: 600;
+}
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.left-section h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.left-section .fa-google-scholar {
+  color: #4285f4;
+  /* Google Scholar color */
+}
+
+.right-section {
+  flex-grow: 1;
+}
+
+.right-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.right-section li {
+  margin-bottom: 10px;
+}
+
+.right-section a {
+  text-decoration: none;
+  color:rgb(40, 157, 198) ;
+  font-weight: bold;
+}
+
+.right-section a:hover {
+  text-decoration: underline;
+  color: #004080;
+}
+.custom-navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='1.5' stroke-linecap='round' stroke-miterlimit='10' d='M1 2h14M1 8h14M1 14h14'/%3E%3C/svg%3E") !important;
+}
+@import "bootstrap/scss/bootstrap.scss";
+
+  .lists-style {
+      list-style-type: none;
+      /* Bullet style */
+      padding-left: 10px;
+      /* Space between the container's left edge and the list items */
+      margin-left:100px;
+      margin-top: 20px;
+      /* Remove default margin */
+    }
+  
+    /* Styling for list items */
+    .lists-style li {
+      margin-bottom: 8px;
+      text-align: left;
+      justify-content: end;
+      /* Space between each list item */
+    }
+.ex-imgs{
+  width:200px;
+  height:200px;
+}
+.experiences-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  border: 3px solid #289dc6;
+  box-shadow:0 14px 16px rgb(40, 157, 198, 0.1); ;
+}
+/* Skills.css */
+.skill-card {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  flex-direction: row;
+}
+
+.skill-image {
+  width: 60px;
+  /* Adjust the size as needed */
+  height: 60px;
+  /* Adjust the size as needed */
+  border-radius: 50%;
+  object-fit: cover;
+  /* Ensure the image scales properly */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.skill-title {
+  margin-top: 10px;
+  font-size: 12px;
+  text-wrap: wrap;
+  color: black;
+  font-weight: 700;
+  max-width:min-content;
+  /* Adjust text color as needed */
+}
+
+.skill-card:hover .skill-image {
+  transform: scale(1.1);
+  /* Optional hover effect */
+}
+
+/* SkillSection.css */
+.skill-container {
+  padding: 20px;
+  text-align: center;
+  margin:20px 0px 20px 0px;
+  background-color:rgba(117, 123, 124, 0.87);
+
+}
+
+.slides-skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+}
+
+.bg-color-primary {
+  background-color: #f0f0f0;
+  /* Change this to your primary color */
+}
+
+.text-dark {
+  color: #333;
+}
+// .sty{
+//  .btn {
+//       margin-right: 10px;
+//       /* Adjust as needed */
+//     }
+//     .btn-online-primary {
+//       border-color: #289dc6;
+//       /* Set your desired outline color */
+//       color: white;
+//       /* Set the text color if needed */
+//     }
+  
+//     .btn-online-primary:hover {
+//       background-color: #289dc6;
+//       /* Set hover background color */
+//       border-color:#289dc6;
+//       /* Set hover outline color */
+//       color:white;
+//       /* Set hover text color */
+//     }
+//         .btn-online-primary {
+//           border: 2px solid #007bff; // Change to your desired outline color
+//           color: #007bff; // Change to your desired text color
+//           padding: 10px 20px; // Adjust padding as needed
+//           margin-right: 10px; // Add space between buttons
+//           text-decoration: none; // Remove underline from links
+//           border-radius: 4px; // Optional: Add rounded corners
+//           transition: all 0.3s ease; // Optional: Smooth transition for hover effects
+//         }
+    
+//         .btn-online-primary:hover {
+//           background-color: #007bff; // Change to your desired hover background color
+//           border-color: #0056b3; // Change to your desired hover border color
+//           color: #ffffff; // Change to your desired hover text color
+//         }
+// }

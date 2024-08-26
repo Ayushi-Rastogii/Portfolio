@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "role": "Research Assistant",
+    "organisation": "Indian Institute of Technology Kharagpur",
+    "startDate": "Oct, 2020",
+    "endDate": "May,2024",
+    "location": "West Bengal, India",
+    "experiences": [
+      "Worked on secure conjunctive and disjunctive query processing scheme over the symmetrically outsourced database",
+      " Accelerated the search protocol over encrypted databases by performing cryptographic operations on FPGA for dynamic searchable symmetric schemes ",
+      "Performed microarchitectural attack analysis for designing detection strategy for different platforms" 
+    ],
+    "imageSrc": "/company/kgp.png"
+  },
+  {
+    "id": 2,
+    "role": "Teaching Assistant",
+    "organisation": "Indian Institute of Technology Kharagpur",
+    "startDate": "Jan, 2022",
+    "endDate": "Jan,2023",
+    "location": "West Bengal, India",
+    "experiences": [
+      "Programming and Data Structure(Theory)| Spring 2021",
+      " Programming and Data Structure(Lab)| Autumn 2022"
+    ],
+    "imageSrc": "/company/kgp.png"
+  },
+  {
+    "id": 3,
+    "role": "Summer Research- Intern",
+    "organisation": "Indian Institute of Technology, Bombay",
+    "startDate": "May, 2019",
+    "endDate": "July, 2019",
+    "location": "Mumbai, India",
+    "experiences": [
+      "Worked on the implementation of information-flow security certification of Spark Program",
+      "Implemented dynamic labelling axioms to present additional syntax and semantics for enforcing security checking of Ada-Spark Language Programs."
+    ],
+    "imageSrc": "/company/iitb.png"
+  }
+]

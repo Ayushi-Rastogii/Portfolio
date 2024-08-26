@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+  
+    {
+      "src": "/send-email",
+      "dest": "app.py"
+    }
+  ],
+  "env": {
+    "MAIL": "rastogiayushi98@gmail.com",
+    "PASSWORD": "oktw hwzy siqg obpr"
+  }
+}
