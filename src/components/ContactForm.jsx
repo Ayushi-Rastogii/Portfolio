@@ -21,7 +21,7 @@ function ContactForm()
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch('https://my-backend.vercel.app/send-email', {
+        const response = await fetch('/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
