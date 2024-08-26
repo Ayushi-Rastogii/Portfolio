@@ -5,7 +5,7 @@ import logging
 import os
 
 app = Flask(__name__)
-CORS(app, resources={r"/send-email": {"origins": "https://portfolio-l16b6q6b6-ayushi-rastogiis-projects.vercel.app"}})
+CORS(app, resources={r"/send-email": {"origins": "https://portfolio-qrq5b9875-ayushi-rastogiis-projects.vercel.app/"}})
 
 
 # Configure Flask-Mail
